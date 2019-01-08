@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fRUItmeN遊戲官網</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script> 
+    <script src="./js/main.js" type="text/javascript"></script> 
+  </head>
+  <body>
+    <img src="./img/Hamburger_icon.svg.png" alt="" class="hamburger">
+    <header>
+      <div class='menu'>
+        <ul>
+          <li class='menu_item'><a href="#announce">公告</a></li>
+          <li class='menu_item'><a href="#introduce">介紹</a></li>
+          <li class='menu_item'><a href="#control">操作</a></li>
+          <li class='menu_item'><a href="#download">下載</a></li>
+          <li class='menu_item'><a href="#QA">Q&A</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id='title'></div><!-- home -->
+    <div id="announce">
+      <h1>遊戲公告</h1>
+      <div class='announce_content'>
+        <div class="announce_list"><p class="brown items">2018.12.24</p><a href="#" class="announce_text"><p class="white items">【公告】18/12/24遊戲開發進度報告</p></a></div>
+        <div class="announce_list"><p class="brown items">2018.12.20</p><a href="#" class="announce_text"><p class="white items">【活動】聖誕節優惠活動開跑囉!</p></a></div>
+        <div class="announce_list"><p class="brown items">2018.12.20</p><a href="#" class="announce_text"><p class="white items">【公告】來自開發團隊們的信</p></a></div>
+      </div>
+    </div><!-- announce -->
+    <div id="introduce">
+      <h1>遊戲介紹</h1>
+      <img src="./img/left_arrow.png" alt="" class="left_arrow" onclick="buttonInput(-1)">
+      <div class="intro_info">
+        <div id="intro_info1" class="intro_item">
+          <h2>故事背景</h2>
+          <p>傳說500萬年前地表上存在名為「水果人」的生物，外表像水果卻有各自意識及獨特能力；同時間，天上則有豐饒女神與災厄神持續爭戰，然而...</p>
+          <a href="../intro_page/intro_page.html" class="readmore"><h3>Read More</h3></a>
+        </div>
+        <div id="intro_info2" class="intro_item">
+          <h2>遊戲特點</h2>
+          <p>Fruitmen有豐富的水果人召喚系統，以及以水果為概念而延伸的新鮮度耐久系統，與讓大地恢復生機的地圖豐饒度系統等等。在遊戲中還有其他更多有趣的特色等玩家們發現...</p>
+          <a href="../intro_page/intro_page.html" class="readmore"><h3>Read More</h3></a>
+        </div>
+      </div>
+      <img src="./img/right_arrow.png" alt="" class="right_arrow" onclick="buttonInput(1)">
+    </div><!-- introduce -->
+    <div id="control">
+      <h1>操作介面</h1>
+      <div class="control_icons">
+        <img src="./img/online-game.png" alt="">
+        <img src="./img/monitor.png" alt="">
+        <img src="./img/gamepad.png" alt="">
+      </div>
+      <a href="../control_page/control_page.html" class="readmore"><h3>Read More</h3></a>
+    </div><!-- control -->
+    <div id="download">
+      <h1>遊戲下載</h1>
+      <div><a href="" class="download_btn">Game Download</a></div>
+    </div><!-- download -->
+    <div id="QA">
+      <h1>常見問題</h1>
+      <div class='QA_div'>
+        <a href="#" class="QA_item">Q:創作這款遊戲的動機</a>
+        <a href="#" class="QA_item">Q:在製作這款遊戲時遇到的困難</a>
+        <a href="#" class="QA_item">Q:在開發過程中學到了甚麼</a>
+      </div>
+    </div><!--QA -->
+    <footer>
+      Designed by Fruitmen @ 2018
+    </footer>
+  </body>
+</html>

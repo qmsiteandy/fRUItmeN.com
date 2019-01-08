@@ -1,0 +1,352 @@
+html{
+  background-color: #303030;
+  box-sizing: border-box;
+  font-size: 12pt;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+}
+
+*{
+  box-sizing: inherit;
+}
+
+header{
+  height:60px;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 3px 5px #000;
+}
+
+.hamburger{
+  width: 40px;
+  margin: 10px 20px;
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+.menu{
+  float: right;
+  margin-right:20px;
+}
+
+.menu ul{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu_item{
+  margin:0 5px;
+}
+
+.menu_item a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 1rem;
+}
+
+.menu_item:hover{
+  border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width:768px){
+  .hamburger{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  header{
+    height:0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .menu{
+    float: none;
+    display: none;
+  }
+  .menu_item{
+    font-size: 1.25rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+  }
+  .menu_item:hover{
+    border: none;
+  }
+  .menu ul{
+    display: block;
+  }
+}
+
+#title{
+  width: 100%;
+  height: 27vw;
+  /* background-color: #000; */
+  background-image: url("../img/1546853775896.jpg") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  box-shadow: 0 3px 5px #000;
+}
+
+#announce{
+  width: 100%;
+  height:auto;
+  padding: 50px 10% 40px;
+}
+
+#announce h1{
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 200px;
+  margin: 0px auto 30px;
+}
+
+.announce_content{
+  width: 570px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.announce_list{
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.announce_list .brown{
+  display: inline-block;
+  color: #e6a173;
+  width: auto;
+}
+
+.announce_list .white{
+  display: inline-block;
+  color: rgb(189, 189, 189);
+  width: auto;
+  margin-left: 40px;
+ }
+
+ .announce_text{
+  text-decoration: none;
+ }
+
+ .announce_text p:hover{
+  color: rgb(255, 255, 255);
+ }
+
+#introduce{
+  width: 100%;
+  height: 400px;
+  padding: 50px 10% 40px;
+  background-image: url("../img/map.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 60px;
+  background-attachment: fixed;
+}
+
+#introduce h1{
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 200px;
+  margin: 0px auto 20px;
+}
+
+.left_arrow{
+  float: left;
+  width: 40px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.intro_info{
+  float: left;
+  width: 50%;
+  margin-left: 260px;
+  padding: 15px;
+}
+
+.right_arrow{
+  float: right;
+  width: 40px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.intro_info h2{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.intro_info p{
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.readmore{
+  text-decoration:none;
+}
+
+.readmore h3{
+  font-size: 1.2rem;
+  width: 150px;
+  height: 50px;
+  padding: 8px 20px;
+  margin: 30px auto;
+  color: #fac104;
+  border-radius: 20px;
+  border: #fac104 solid 3px;
+}
+
+.readmore h3:hover{
+  background-color: #fac104;
+  color: #000;
+}
+
+@media screen and (max-width:1024px){
+  .intro_info{
+    margin-left:170px; 
+  }
+}
+
+@media screen and (max-width:768px){
+  #introduce{
+    height: 450px;
+  }
+  .intro_info{
+    margin-left:115px; 
+  }
+}
+
+#control{
+  width: 100%;
+  height: auto;
+  padding: 50px 10% 40px;
+}
+
+#control h1{
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 200px;
+  margin: 0px auto 20px;
+}
+
+.control_icons{
+  width: 668px;
+  padding: 0 auto;
+  margin: 70px auto;
+}
+
+.control_icons img{
+  margin: 0 50px;
+}
+
+@media screen and (max-width:768px){
+  .control_icons{
+    width: 548px;
+  }
+  .control_icons img{
+    margin: 0 30px;
+  }
+}
+
+#download{
+  width: 100%;
+  height: auto;
+  padding: 50px 10% 40px;
+  background-image: url(../img/game.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -350px;
+  background-attachment: fixed;
+}
+
+#download h1{
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 200px;
+  margin: 0px auto 20px;
+}
+
+.download_btn{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  width: 300px;
+  height: 75px;
+  padding: 13px 20px;
+  margin: 40px auto 0;
+  color: #c6ffd7;
+  border-radius: 20px;
+  border: #c6ffd7 solid 3px;
+}
+
+.download_btn:hover{
+  background-color: #c6ffd7;
+  color: black;
+}
+
+@media screen and (max-width:768px){
+  #download{
+    background-position-y: 50px;
+  }
+}
+
+#QA{
+  width: 100%;
+  height: auto;
+  padding: 50px 10% 30px;
+}
+
+#QA h1{
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 200px;
+  margin: 0px auto 20px;
+}
+
+.QA_div{
+  margin: 50px auto;
+}
+
+.QA_item{
+  text-decoration: none;
+  color:rgb(189, 189, 189);
+  font-size: 1.5rem;
+  display: block;
+  width: 400px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.QA_item:hover{
+  color:rgb(255, 255, 255);
+}
+
+footer{
+  text-align: center;
+  font-size: 1.1rem;
+  height: 50px;
+  padding: 12px;
+  background-color: #25020b;
+}
